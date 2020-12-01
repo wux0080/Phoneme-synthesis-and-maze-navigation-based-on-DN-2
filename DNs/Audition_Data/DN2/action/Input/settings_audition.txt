@@ -1,0 +1,96 @@
+6		\\ Number of segments the network will run. 
+		\\ Segment 1 is the Training segment. All motors in each timestep of the segment are supervised.
+		\\ Segment 2 is the Resubstitution segment. Is the same training set, only the first state motor per sentence is supervised.
+		\\ Segment 3, 4, and 5 are the Disjoint segments. Only the first state motor per sentence is supervised.
+3		\\ Index where the network will begin measuring its performance (error rate). In this case, we start with the Resubstitution segment.
+1780 1780 1780 1780 1780 1780 \\ Length of each segment. 
+2		\\ Number of SensorLayers. 
+11 10 	\\ (height, width) of the input image.
+
+10 8 	\\ (height, width) of the input image.
+
+61		\\ Number of MotorLayers.
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+1 128 	\\ (height, width)
+
+1 22 	\\ (height, width)
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \\ TopK winning neurons for each MotorLayer.
+1 		\\ Number of HiddenLayers.
+1000	\\ Number of neurons each hidden layer will use.
+1 		\\ TopK winning neurons of each HiddenLayer.
+A 	 	\\ The modality these settings will be used for.
+		\\ A -> Audition Modality. Using the speech data.
+		\\ V -> Vision Modality. Using the image data discussed at the workshop.
+		\\ T -> Language Modality. Using text data from a language model (Finite Automata) that accepts English and French sentences.
+0.5     \\ Pre-screening percent, suppresses firing in this many neurons in bottom up and top down response
+
+false   \\ Using GUI
+1       \\ Number of practices for segment 1 (will be randomly generated).		
+1       \\ Evaluate per n practices
+11 1    \\ (Size, stride) of receptive field in hidden layers.
+
+0 0 0 2 0 0 2 \\ types of y neurons
