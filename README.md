@@ -1,0 +1,2 @@
+# Phoneme-synthesis-and-maze-navigation-based-on-DN-2
+We used Developmental Network-2 (DN-2) to experiment two sequential tasks of different modalities. The learn-to-recognize-through-synthesis experiment trains DN-2 to syntesize the phonemes it heard with self-supervision and recognize the phoneme types with temporally sparse labels. The maze navigation experiment trains DN-2 to learn navigation skills, chain these skills and choose an optimal route to the destination in a simulated maze environment.
