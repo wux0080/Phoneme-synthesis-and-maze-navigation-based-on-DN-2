@@ -1,0 +1,28 @@
+true  // supervised flag.
+5     // map height
+4     // map width
+3     // starting height
+1     // starting width
+DOWN  // starting angle
+0     // previous skill
+1     // planning length
+ENV
+WALL 	OPEN 	OPEN 	WALL 	
+URLT 	OPEN 	OPEN 	OPEN 	
+WALL 	OPEN 	OPEN 	OPEN 	
+WALL 	OPEN 	OPEN 	WALL 	
+WALL 	OBST 	DEST 	LLLT
+GPS
+NONE 	DOWN 	DOWN 	NONE 	
+NONE 	DOWN 	DOWN 	LEFT 	
+NONE 	DOWN 	DOWN 	LEFT 	
+NONE 	DOWN 	DOWN 	NONE 	
+NONE 	DOWN 	DOWN 	NONE
+REVERSE GPS
+NONE 	ARRIVE 	LEFT 	NONE
+NONE 	UP  	UP  	LEFT
+NONE 	UP  	UP  	LEFT
+NONE 	UP  	UP  	NONE
+NONE 	UP  	UP  	NONE
+PLANNING
+1

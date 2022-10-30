@@ -1,0 +1,14 @@
+7               // Number of skills, the first part of the lesson are basic skills
+2               // Number of means, the second part of the lesson are the destinations
+1               // Number of planning maps. In planning the network needs to determine which destination to choose.
+LESSONS
+maps/L0.txt     1  // Map file, number of iterations of training
+maps/L1.txt     1
+maps/L2.txt     1
+maps/L3.txt     1
+maps/L4.txt     1
+maps/L5.txt     1
+maps/L6.txt     1
+maps/map_1.txt  1
+maps/map_2.txt  1
+maps/map_3.txt  1
